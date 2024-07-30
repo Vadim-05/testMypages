@@ -7,12 +7,12 @@ export default defineNuxtConfig({
     '~/plugins/axios',
   ],
   app: {
-    baseURL: '/vadimTest/', // baseURL: '/<repository>/'
+    baseURL: '/testMypages/', // baseURL: '/<repository>/'
     buildAssetsDir: 'assets', // don't use "_" at the beginning of the folder name to avoids nojkill conflict
     head: {
-      title: 'vadimTest',
+      title: 'testMypages',
       link: [
-        { rel: 'icon', href: '/vadimTest/favicon.png' } 
+        { rel: 'icon', href: '/testMypages/favicon.png' } 
       ],
     },
   },
