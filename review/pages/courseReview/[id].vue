@@ -58,23 +58,23 @@
 	</div>
 </template>
 <script>
-export default{
-	data(){
-		return{
-			course: '',
-		}
-	},
-	mounted(){
-		this.$api.get(`courses/${this.$route.params.id}`)
-		.then(response => {
-			this.course = response.data
-        })
-        .catch(error => {
-          console.log('Error:', error);
-        });
-	}
+export default {
+  data() {
+    return {
+      course: '',
+    };
+  },
+  async mounted() {
+    try {
+      const response = await this.$api.get(`courses/${this.$route.params.id}`);
+      this.course = response.data;
+    } catch (error) {
+      console.error('Error fetching course:', error);
+    }
+  }
 }
 </script>
+
 <style lang="scss">
 .course-review{
 	&__nav-menu{
