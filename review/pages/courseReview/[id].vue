@@ -1,7 +1,7 @@
 <template>
 	<div class="d-flex mx-auto container-main justify-space-between course-review">
 		<nav class="course-review__nav-menu align-center">
-			<Icon name="my-icon:home" class='course-review__icon-home'/>
+			<!-- <Icon name="my-icon:home" class='course-review__icon-home'/> -->
 			<span class="course-review__nav-title">Головна</span>
 		</nav>
 		<div class="course-review__content">
