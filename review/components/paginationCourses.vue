@@ -49,15 +49,14 @@ export default {
     };
   },
   methods: {
-    fetchCourses() {
-      this.$api.get(`courses/?page=${this.currentPage}`)
-        .then(response => {
-          this.courses = response.data.results;
-          this.totalPages = Math.ceil(response.data.count / response.data.results.length);
-        })
-        .catch(error => {
-          console.log('Error:', error);
-        });
+    async fetchCourses() {
+      try {
+        const response = await this.$api.get(`courses/?page=${this.currentPage}`);
+        this.courses = response.data.results;
+        this.totalPages = Math.ceil(response.data.count / response.data.results.length);
+      } catch (error) {
+        console.log('Error fetching courses:', error);
+      }
     }
   },
   watch: {
@@ -65,8 +64,8 @@ export default {
       this.fetchCourses();
     }
   },
-  created() {
-    this.fetchCourses();
+  async created() {
+    await this.fetchCourses();
   }
 };
 </script>
