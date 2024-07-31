@@ -52,8 +52,8 @@
 				    </div>
 				</div>
 			</section>
-			<formСomment/>
-			<viewReviews/>
+			<!-- <formСomment/> -->
+			<!-- <viewReviews/> -->
 		</div>
 	</div>
 </template>
@@ -75,7 +75,7 @@ export default{
 	}
 }
 </script>
-<style lang="scss">
+<style >
 .course-review{
 		width: 365px;
 	padding: 0 10px 0 10px;
