@@ -76,7 +76,7 @@ export default {
   }
 }
 </script>
-<!-- 
+
 <style lang="scss">
 .course-review{
 	&__nav-menu{
@@ -304,4 +304,4 @@ export default {
 		}
 	}
 }
-</style> -->
+</style>

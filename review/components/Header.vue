@@ -3,9 +3,12 @@
 		<div class="header__mobile align-center justify-space-between mx-auto">
 		    <Icon name="my-icon:logo"  class='header__logo'/>
 			<div class="d-flex align-center justify-space-between header__actions">	
-				<Icon name="my-icon:sidebar" class='header__sidebar-icon'/>
+					
+			<img src="/sidebar.svg" class='header__sidebar-icon cursor-pointer'/>
+				<!-- <Icon name="my-icon:sidebar" class='header__sidebar-icon'/> -->
 				<button class='header__login-button d-flex align-center'>
-					<Icon name="my-icon:btn-picture" class='header__login-icon'/>
+					<!-- <Icon name="my-icon:btn-picture" class='header__login-icon'/> -->
+					<img src="/btn-picture.svg" class='header__login-icon'/>
 					<div class="header__login-text">Вхід</div>
 				</button>
 			</div>
@@ -23,15 +26,18 @@
                 @click:append-inner="onClick"
             >
                 <template #append-inner>
-          	        <Icon name="my-icon:search" class='header__search-icon cursor-pointer' />
+                	<img src="/search.svg" class='header__search-icon cursor-pointer'/>
+          	        <!-- <Icon name="my-icon:search" class='header__search-icon cursor-pointer' /> -->
                 </template>
             </v-text-field>
             <Icon name="my-icon:voice" class='header__voice-icon cursor-pointer'/>
         </v-card-text>
 		<div class="header__actions-desktop align-center justify-space-between">	
-			<Icon name="my-icon:sidebar" class='header__sidebar-icon cursor-pointer'/>
+			<img src="/sidebar.svg" class='header__sidebar-icon cursor-pointer'/>
+			<!-- <Icon name="my-icon:sidebar" class='header__sidebar-icon cursor-pointer'/> -->
 			<button class='header__login-button d-flex align-center'>
-				<Icon name="my-icon:btn-picture" class='header__login-icon'/>
+				<img src="/btn-picture.svg" class='header__login-icon'/>
+				<!-- <Icon name="my-icon:btn-picture" class='header__login-icon'/> -->
 				<div class="header__login-text">Вхід</div>
 			</button>
 		</div>
