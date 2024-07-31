@@ -52,8 +52,8 @@
 				    </div>
 				</div>
 			</section>
-			<formСomment/>
-			<viewReviews/>
+<!-- 			<formСomment/>
+			<viewReviews/> -->
 		</div>
 	</div>
 </template>
