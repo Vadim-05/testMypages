@@ -1,4 +1,5 @@
-import vuetify from 'vite-plugin-vuetify'
+import axios from 'axios';
+import vuetify from 'vite-plugin-vuetify';
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -12,18 +13,22 @@ export default defineNuxtConfig({
     head: {
       title: 'testMypages',
       link: [
-        { rel: 'icon', href: '/testMypages/favicon.png' } 
+        { rel: 'icon', href: '/testMypages/favicon.png' }
       ],
     },
   },
+  generate: {
+    routes: async () => {
+      const { data } = await axios.get('https://testotzovik.onrender.com/api/v1/courses/'); // Замените на ваш API
+      return data.map(course => `/courseReview/${course.id}`);
+    },
+    fallback: true // добавляет поддержку 404 страницы
+  },
   css: ['vuetify/lib/styles/main.sass'],
-
   modules: ["@nuxt/icon"],
-
   build: {
     transpile: ['vuetify']
   },
-
   icon: {
     customCollections: [
       {
@@ -32,6 +37,5 @@ export default defineNuxtConfig({
       },
     ],
   },
-
   compatibilityDate: '2024-07-26',
-})
+});
