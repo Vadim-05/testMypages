@@ -20,7 +20,7 @@ export default defineNuxtConfig({
   generate: {
     routes: async () => {
       const { data } = await axios.get('https://testotzovik.onrender.com/api/v1/courses/'); // Замените на ваш API
-      return data.results.map(course => `/courseReview/${course.id}`);
+      return data.results.map(course => `/testMypages/courseReview/${course.id}`);
     },
     fallback: true // добавляет поддержку 404 страницы
   },
