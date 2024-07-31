@@ -13,9 +13,9 @@
 					<p class="course-review__info-item">{{course.company}}</p>
 					<p class="course-review__info-item">{{course.location}}</p>
 				</div>
-				<img src="/logoCompany.png" class='course-review__logo'/>
+				<!-- <img src="/logoCompany.png" class='course-review__logo'/> -->
 			</section>
-			<div class="d-flex">
+			<!-- <div class="d-flex">
 				
 			<button class='course-review__apply-btn font-weight-black'>Відправити заявку</button>
 			<button class='course-review__contacts-btn font-weight-black'>Показати контакти</button>
@@ -50,7 +50,7 @@
 				    	<div class="course-review__category-icon rounded-circle"></div>
 				    	<span>Мова</span>
 				    </div>
-				</div>
+				</div> -->
 			</section>
 <!-- 			<formСomment/>
 			<viewReviews/> -->
