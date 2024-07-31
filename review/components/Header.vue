@@ -1,9 +1,11 @@
 <template>
 	<header class="header d-flex align-center justify-space-between mx-auto">
 		<div class="header__mobile align-center justify-space-between mx-auto">
-		    <Icon name="my-icon:logo"  class='header__logo'/>
+
+			<img src="/logo.svg" class='header__logo'/>
+		    <!-- <Icon name="my-icon:logo"  class='header__logo'/> -->
 			<div class="d-flex align-center justify-space-between header__actions">	
-					
+
 			<img src="/sidebar.svg" class='header__sidebar-icon cursor-pointer'/>
 				<!-- <Icon name="my-icon:sidebar" class='header__sidebar-icon'/> -->
 				<button class='header__login-button d-flex align-center'>
@@ -13,7 +15,9 @@
 				</button>
 			</div>
 		</div>
-		<Icon name="my-icon:logo"  class='header__logo-desktop'/>
+		
+			<img src="/logo.svg" class='header__logo-desktop'/>
+		<!-- <Icon name="my-icon:logo"  class='header__logo-desktop'/> -->
 		<v-card-text class='pa-0 header__search-container d-flex justify-space-between'>
 		    <v-text-field
 			    class='header__search-input'
@@ -30,7 +34,7 @@
           	        <!-- <Icon name="my-icon:search" class='header__search-icon cursor-pointer' /> -->
                 </template>
             </v-text-field>
-            <Icon name="my-icon:voice" class='header__voice-icon cursor-pointer'/>
+            <!-- <Icon name="my-icon:voice" class='header__voice-icon cursor-pointer'/> -->
         </v-card-text>
 		<div class="header__actions-desktop align-center justify-space-between">	
 			<img src="/sidebar.svg" class='header__sidebar-icon cursor-pointer'/>
