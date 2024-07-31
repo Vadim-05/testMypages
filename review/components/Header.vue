@@ -2,7 +2,7 @@
 	<header class="header d-flex align-center justify-space-between mx-auto">
 		<div class="header__mobile align-center justify-space-between mx-auto">
 
-			<img src="/logo.svg" class='header__logo'/>
+			<img src="/logo-company.svg" class='header__logo'/>
 		    <!-- <Icon name="my-icon:logo"  class='header__logo'/> -->
 			<div class="d-flex align-center justify-space-between header__actions">	
 
@@ -16,7 +16,7 @@
 			</div>
 		</div>
 		
-			<img src="/logo.svg" class='header__logo-desktop'/>
+			<img src="/logo-company.svg" class='header__logo-desktop'/>
 		<!-- <Icon name="my-icon:logo"  class='header__logo-desktop'/> -->
 		<v-card-text class='pa-0 header__search-container d-flex justify-space-between'>
 		    <v-text-field
