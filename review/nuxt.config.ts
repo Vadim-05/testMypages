@@ -1,6 +1,18 @@
 import vuetify from 'vite-plugin-vuetify'
+import axios from 'axios';
 
 export default defineNuxtConfig({
+  generate: {
+    fallback: true,
+    routes: function () {
+      return axios.get('https://testotzovik.onrender.com/api/v1/courses/')  // Змініть на ваш API
+        .then((res) => {
+          return res.data.map((course) => {
+            return '/course/' + course.id
+          })
+        })
+    }
+  },
   devtools: { enabled: true },
   plugins: [
     '~/plugins/vuetify',
